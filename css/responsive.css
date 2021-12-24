@@ -1,0 +1,98 @@
+/* responsive css started */
+.checkbox , .icon {
+  opacity: 0;
+  visibility: hidden;
+}
+@media (max-width:1100px){
+  h3 {
+    font-size: 25px;
+}
+  header .title h3 i {
+    font-size: 1.4em;
+}
+  header .menu ul {
+    margin-right: 2em;
+}
+  header .menu ul li a {
+    padding: 0 10px;
+    font-size: 1.4em;
+    color: rgb(27, 25, 25);
+}
+}
+/*for mobile*/
+@media (max-width:870px) {
+  .menu ul:nth-child(3):hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+  }
+  .menu ul:nth-child(3):hover i {
+    transform: rotate(90deg);
+  }
+  header .title {
+    margin: 10px auto;
+    width: 100%;
+    text-align: center;
+}
+.checkbox, .icon {
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+  left: 27px;
+  top: 74px;
+}
+.checkbox{
+  opacity: 0;
+}
+.icon {
+  font-size: 2em;
+  position: relative;
+  top: 10px;
+  left: 20px;
+  pointer-events: none;
+}
+.menu ul {
+  opacity: 0;
+  visibility: hidden;
+}
+header .menu ul {
+  flex-direction: column;
+  margin-top: 20px;
+  position: absolute;
+}
+.menu .checkbox:checked ~ ul {
+  opacity: 1;
+  visibility: visible;
+  background-color: rgb(247, 246, 244);
+}
+.menu ul li ul{
+  opacity: 0;
+  visibility: hidden;
+}
+header .buy-button {
+  position: relative;
+  bottom: 0px;
+  right: 0px;
+}
+.menu ul li{
+  border-bottom: 1px solid rgb(235, 202, 202);
+}
+.menu ul li ul {
+  position: absolute;
+  top: 95px;
+  left: 134px;
+  background-color: rgb(247, 246, 244);
+}
+
+  .menu ul li ul li {
+    padding: 6px;
+    border-bottom: 1px solid rgb(235, 202, 202);
+}
+.menu ul li .checkbox2{
+  position: relative;
+  left: -30px;
+  top: -2px;
+  opacity: 0;
+}
+
+}

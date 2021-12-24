@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+a{
+  text-decoration: none;
+}
+/* header section */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fafafa;
+}
+header .title h3 i{
+  font-size: 1.5em;
+  color: blue;
+}
+header .title{
+ margin: 20px 20px;
+ font-size: 1.5em;
+}
+header .menu{
+  align-self: center;
+}
+header .menu ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+header .menu ul li{
+  list-style: none;
+}
+header .menu ul li a{
+  padding: 0 20px;
+  font-size: 1.5em;
+  color: rgb(27, 25, 25);
+}
+.menu ul li ul{
+  opacity: 0;
+  visibility: hidden;
+  transition: .4s;
+  transform: scaleY(0);
+  transform-origin: center;
+  display: block;
+  position: absolute;
+}
+.menu ul li i {
+  transition: .4s;
+}
+.menu ul li ul li{
+  padding: 20px;
+}
+.menu ul li .checkbox2{
+  opacity: 0;
+  visibility: 0;
+}
+.menu ul:nth-child(3):hover ul{
+  opacity: 1;
+  visibility: visible;
+  transform: scaleY(1);
+}
+.menu ul:nth-child(3):hover i {
+  transform: rotate(90deg);
+}
+header .buy-button{
+  border:2px solid olive;
+  border-radius: 20px;
+  margin-right: 20px;
+  font-size: 1.1rem;
+  height: 2em;
+  padding: 5px 30px;
+  align-self: center;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+header .buy-button .buy-text{
+  color: olive;
+}
+
+/* end of header */
